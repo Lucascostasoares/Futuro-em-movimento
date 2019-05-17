@@ -408,6 +408,12 @@ main{
 		height: 120px;
 	}
 }
+@media(max-width: 320px){
+	.main__atividadesContainer--ativs{
+		width: 100px;
+		height: 100px;
+	}
+}
 .main__atividadesContainer--ativs img{
 	width: 60px;
 	height: 60px;
