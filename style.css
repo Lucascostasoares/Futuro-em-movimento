@@ -484,7 +484,7 @@ footer{
 		flex-direction: column;
 		align-items: center;
 		z-index: -1;
-		background-color: rgba(251, 38, 202, 0.7);
+		background-color: rgba(251, 38, 202, 0.6);
 	}
 }
 .sixthcircle--mobile{
@@ -502,6 +502,14 @@ footer{
 @media(max-width: 425px){
 	.sixthcircle--mobile{
 		display: flex;
+	}
+}
+@media(max-width: 320px){
+	.sixthcircle--mobile{
+		width: 768px;
+		height: 1100px;
+		top: -860px;
+		right: 0;
 	}
 }
 .footer__mobInvitation{
@@ -527,9 +535,21 @@ footer{
 .footer__contactBox--firsttext{
 	width: 25%;
 	font-family: KorolevMedium;
-	font-size: 18px;
+	font-size: 20px;
 	color: #00FFCB;
 	padding: 0 0 15px 30px;
+}
+@media(max-width: 375px){
+	.footer__contactBox--firsttext{
+		font-size: 18px;
+	}
+}
+@media(max-width: 320px){
+	.footer__contactBox--firsttext{
+		width: 24vw;
+		font-size: 16px;
+		padding: 0 0 5px 30px;
+	}
 }
 
 /*-- partner box --*/
@@ -630,19 +650,30 @@ footer{
 @media(max-width: 425px){
 	.footer__contactBox--secondtext{
 		width: 51%;
-		padding: 0 5px 0 0;
+		padding: 0 20px 0 0;
 		font-family: KorolevLight;
 		letter-spacing: 1px;
 		font-size: 18px;
 		color: #FFFFFF;
 	}
 }
-@media(max-width: 320px){
+@media(max-width: 375px){
 	.footer__contactBox--secondtext{
 		width: 51%;
-		padding: 0 5px 0 0;
+		padding: 0 10px 0 0;
 		font-family: KorolevLight;
+		letter-spacing: 1px;
 		font-size: 16px;
+		color: #FFFFFF;
+	}
+}
+@media(max-width: 320px){
+	.footer__contactBox--secondtext{
+		width: 70vw;
+		padding: 2px 20px 0 0;
+		font-family: KorolevLight;
+		letter-spacing: 1px;
+		font-size: 14px;
 		color: #FFFFFF;
 	}
 }
@@ -667,7 +698,29 @@ footer{
 }
 @media(max-width: 425px){
 	.eighthcircle{
-		display: none;
+		width: 350px;
+		height: 350px;
+		left: -120px;
+		bottom: 440px;
+		z-index: -2;
+	}
+}
+@media(max-width: 375px){
+	.eighthcircle{
+		width: 300px;
+		height: 300px;
+		left: -90px;
+		bottom: 450px;
+		z-index: -2;
+	}
+}
+@media(max-width: 320px){
+	.eighthcircle{
+		width: 200px;
+		height: 200px;
+		left: -70px;
+		bottom: 555px;
+		z-index: -2;
 	}
 }
 .footer__rodape{
