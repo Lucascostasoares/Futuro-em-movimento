@@ -12,10 +12,12 @@
   font-family: 'KorolevBold';
   src: url('assets/KorolevBold.woff') format('woff');
 }
+
 @font-face {
   font-family: 'KorolevMedium';
   src: url('assets/KorolevMedium.woff') format('woff');
 }
+
 body{
 	width: 100%;
 	background-image: url(assets/modelofundo.png);
@@ -250,6 +252,7 @@ main{
 }
 #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8{
 	display: none;
+
 }
 .slide_img{
 	z-index: -1;
@@ -311,7 +314,40 @@ main{
 	height: 30px;
 }
 
+
 @media(max-width: 475px){
+
+}
+.pre, .nxt{
+	width: 12%;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+.pre{
+	left: -80px;
+}
+.nxt{
+	left: -50px;
+}
+@media(max-width: 425px){
+	.pre{
+		left: -8vw;
+		top: 45%;
+	}
+	.nxt{
+		left: 310px;
+		top: 45%;
+	}
+}
+.slide_img{
+	z-index: -1;}
+.pre img, .nxt img{
+	width: 30px;
+	height: 30px;
+}
+@media(max-width: 425px){
+
 	.pre img, .nxt img{
 		width: 20px;
 		height: 20px;
@@ -462,6 +498,7 @@ footer{
     flex-direction: column;
     align-items: flex-end;
 }
+
 @media only screen and (max-width: 475px){
 	footer{
 		overflow: visible;
@@ -533,6 +570,13 @@ footer{
 
 .footer__partner-Box{
 	width: 400px;
+
+
+/*-- partner box --*/
+
+.footer__partnerBox{
+    width: 400px;
+
     height: 200px;
     margin: 300px 100px 0 0;
     display: flex;
@@ -540,11 +584,13 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 @media only screen and (max-width: 475px){
 	.footer__partner-Box{
 		display: none;
 	}
 }
+
 .footer__partnerTitle{
     width: 100%;
     text-align: center;
@@ -552,6 +598,7 @@ footer{
     font-size: 52px;
     color: white;
 }
+r
 @media only screen and (max-width: 475px){
 	.footer__partnerTitle{
 		font-size: 32px;
@@ -566,6 +613,15 @@ footer{
 		width: 110px;
 		height: 110px;
 	}
+
+.footer__fundation--img{
+    width: 150px;
+    height: 150px;
+}
+.footer__educap--img{
+    width: 150px;
+    height: 150px;
+
 }
 
 /*-- contact box --*/
@@ -580,6 +636,7 @@ footer{
     justify-content: center;
     overflow: hidden;
 }
+
 @media only screen and (max-width: 475px){
 	.footer__contact{
 		display: none;
@@ -587,6 +644,10 @@ footer{
 }
 .footer__contactContainer{
 	width: 55%;
+
+.footer__contactContainer{
+	width: 70%;
+
 	height: 100px;
 }
 .footer__contactBox--title{
@@ -595,6 +656,7 @@ footer{
     font-family: 'Comfortaa', cursive;
     color: white;
 }
+
 @media only screen and (max-width: 475px){
 	.footer__contactBox--title{
 		font-size: 32px;
@@ -605,6 +667,11 @@ footer{
 .footer__contactBox--text{
 	padding: 40px 0 0 0;
     font-size: 22px;
+
+.footer__contactBox--firsttext{
+	padding: 40px 0 0 0;
+    font-size: 26px;
+
     font-family: KorolevLight;
     color: white;
 }
@@ -624,6 +691,7 @@ footer{
     font-size: 30px;
     color: #FFDB39;
 }
+
 @media only screen and (max-width: 475px){
 	.footer__contactBox--secondtext{
 		width: 51%;
@@ -633,6 +701,8 @@ footer{
 		color: #FFFFFF;
 	}
 }
+
+
 .footer__contactBox--img{
     width: 350px;
     height: 350px;
@@ -647,16 +717,23 @@ footer{
     height: 1600px;
     position: absolute;
     right: -400px;
+
     bottom: -428px;
+
+    bottom: -400px;
+
     border-radius: 100%;
     background-image: linear-gradient(30deg, rgba(251, 38, 202, 1), rgba(45, 17, 188, 1));
     z-index: -2;
 }
+
 @media only screen and (max-width: 475px){
 	.eighthcircle{
 		display: none;
 	}
 }
+
+
 .footer__rodape{
 	width: 100%;
 	height: 100px;
@@ -674,4 +751,5 @@ footer{
 .footer_img{
 	height: 70px;
 	width: 70px;
+
 }
